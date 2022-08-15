@@ -454,7 +454,10 @@ footer {
     color: #CCCCCC;
     margin-bottom: 7px;
 }
-
+.container {
+    padding: 0 20px;
+    width: 100%;
+}
 
 /* - ==================== - END FOOTER Styles - ==================== - */
 
@@ -538,13 +541,22 @@ footer {
         width: 100%;
     }
     .meet-section_heading {
-        padding: 0 20px 14px;
+        padding: 0 34px 14px;
         display: flex;
+        justify-content: space-between;
+        width: 10%;
         flex-wrap: wrap;
-        width: 50%
+        width: 100%; 
+    }
+    .meet-section_content {
+        row-gap: 11px;
+    }
+    .meet-section_more {
+        margin-top: 25px;
     }
     .dreamshare {
         padding-top: 27px;
+        margin-top: 27px;
     }
     .dreamshare-heading {
         margin-bottom: 15px;
@@ -552,44 +564,78 @@ footer {
     .dreamshare-inner {
        
        flex-wrap: wrap;
-       row-gap: 10px;
-       
+       row-gap: 10px; 
+    }
+    .dreamshare, .holiday_activitis {
+        padding: 0 10px;
     }
     .dreamshare-inner div {
-        width: 93.8%;
+        width: 100%;
+        height: 240px;
         background-position: center center;
+    }
+    .dreamshare-inner .step1, .step3 {
+        padding: 64px 30px 16px 20px;
+    }
+    .dreamshare-inner .step2 {
+        padding: 95px 30px 16px 20px;
     }
     .holiday_activitis_heading {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
-        width: 40%;
         margin: auto;
+        padding: 0 45px;
     }
     .holiday_activitis-cards {
         padding-top: 35px;
+        row-gap: 10px;
     }
     .holiday_activitis-cards div {
-        width: 93.8%;
         flex-wrap: wrap;
+        width: 100%;
+    }
+    .cards-row1, .inner-cards-row2, .inner-cards-row3 {
         row-gap: 10px;
-        margin: 0 auto;
+    }
+    .cards-row1 div, .inner-cards-row2 div, .inner-cards-row3 div {
+        height: 120px;
+    }
+    .wellness, .extreme, .sports {
+        padding: 33px 47px 33px 47px;
+        background-position: center center;
+    }
+    .games, .culture {
+        padding: 47px 19px 46px 20px;
+        background-position: center center;
+    }
+    .enjoyment, .travelling {
+        padding: 47px 11px 46px 12px;
+        background-position: center top;
+    }
+    .sports a {
+        padding: 0 20px;
+        text-align: center;
+    }
+    .wellness a {
+        padding: 0 20px;
+        text-align: center;
+    }
+    .culture a {
+        padding: 0 20px;
+        text-align: center;
     }
     .dreamshare-inner .button-div {
         width: 72px;
         height: 20px;
     }
-    .sports, .wellness {
-        padding: 142px 157px;
-        text-align: center;
-        background-position: center center;
-    }
-    .culture, .enjoyment {
-        padding: 142px 120px;
-        background-position: center center;
-    }
     .create_your_holiday {
-        padding: 35px 0 40px 0;
+        padding: 35px 20px 40px 20px;
+    }
+    .create_your_holiday-inner {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
     }
     .create_your_holiday-heading {
         margin-bottom: 9px;
@@ -608,16 +654,19 @@ footer {
         margin-top: 10px;
         width: 315px;
     }
+    .create_your_holiday-inner form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
     footer {
-        padding: 19px 0 22px 0;
+        padding: 19px 20px 22px 20px;
     }
     .footer-section {
         flex-direction: column;
         padding: 0;
         align-items: center;
         row-gap: 13px;
-        width: 87.5%;
-        margin: auto;
     }
     .footer-section-inner {
         flex-direction: column;
@@ -634,9 +683,9 @@ footer {
     .company ul {
         display: flex;
         flex-wrap: wrap;
-        column-gap: 20px;
-        width: 60%;
-        justify-content: space-evenly;
+        column-gap: 30px;
+        justify-content: center;
+       /*  padding: 0 89px; */
     }
     .company ul li {
         margin-bottom: 0;
